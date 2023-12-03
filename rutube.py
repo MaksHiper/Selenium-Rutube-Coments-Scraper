@@ -35,7 +35,8 @@ try:
     # прокрутка и сбор комментариев
     for i in range(scroll_count):
         time.sleep(2)  # подождать, чтобы комментарии успели загрузиться
-        coment_elements = driver.find_elements(By.CLASS_NAME, "wdp-comment-item-module__descriptionContainer")
+        com
+        ent_elements = driver.find_elements(By.CLASS_NAME, "wdp-comment-item-module__descriptionContainer")
         for coment_element in coment_elements:
             container += 1
             coment_text = coment_element.text
