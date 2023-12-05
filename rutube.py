@@ -32,7 +32,7 @@ def get_video_links():
         search = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.CLASS_NAME, "freyja_char-header-search__input__ln9vI"))
         )
-        search.send_keys("перестройка")
+        search.send_keys("ТЕМА ДЛЯ ПОИСКА")
         search.send_keys(Keys.ENTER)
         time.sleep(4)
 
